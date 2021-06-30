@@ -1,0 +1,111 @@
+* {
+	font-family: 'Nunito', sans-serif;
+}
+body {
+	display: grid;
+	grid-auto-rows: 50px auto 50px;
+	grid-template-areas:
+		'header'
+		'main'
+		'footer';
+	@include bgColor($blue);
+}
+
+h1,
+h1 span,
+h2,
+h3 {
+	font-family: 'Baloo Tammudu 2', cursive;
+}
+
+h1 {
+	font-size: 1rem;
+	span {
+		@include color($red);
+		font-size: 1.5rem;
+	}
+}
+.title__typing {
+	display: inline-block;
+}
+.title__text {
+	animation: typing 5s steps(30, end), blink 0.75s step-end infinite;
+	border-right: 4px solid orange;
+	box-sizing: border-box;
+	display: inline-block;
+	letter-spacing: 2px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+@keyframes typing {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes blink {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: orange;
+	}
+}
+h2,
+h3 {
+	text-align: center;
+	text-shadow: 2px 2px 2px $dark-grey;
+}
+h2 {
+	@include color($grey);
+}
+h3 {
+	@include color($red);
+}
+.btn {
+	display: block;
+	margin: 0 auto;
+}
+.btn-primary {
+	@include bgColor($red, 1, true);
+	@include color(#000);
+	border-color: $red !important;
+	box-shadow: 1px 1px 4px $dark-grey;
+	outline: none !important;
+	width: 100px;
+
+	&:active,
+	&:focus,
+	&:hover {
+		@extend .btn-primary;
+		@include color($grey);
+		text-decoration: underline;
+	}
+	&:active {
+		box-shadow: none !important;
+	}
+	&:hover {
+		animation: scale 1s linear;
+	}
+	@keyframes scale {
+		50% {
+			transform: scale(1.1);
+		}
+	}
+}
+.carousel-indicators {
+	bottom: -15px;
+	li {
+		@include bgColor($dark-grey);
+	}
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	@include bgColor($dark-grey, 0.7);
+	width: 13%;
+}

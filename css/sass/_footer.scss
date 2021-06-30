@@ -1,0 +1,11 @@
+.footer {
+	grid-area: footer;
+	&__text {
+		@include color($grey);
+		text-shadow: 1px 1px 2px #000;
+	}
+	&__link {
+		@include color($grey);
+		text-decoration: underline;
+	}
+}
