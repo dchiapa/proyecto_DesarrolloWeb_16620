@@ -1,50 +1,50 @@
 header {
-	grid-area: header;
-	.navbar {
-		@media screen and (min-width: 768px) {
-			margin: 0 2rem;
-		}
-	}
-	.navbar-toggler:focus {
-		outline: none;
-	}
-	.navbar-toggler-icon {
-		@include bgColor($grey);
-	}
-	.navbar-toggler-icon {
-		border-radius: 4px;
-	}
-	.navbar-brand,
-	.nav-link {
-		@include color($grey);
-	}
-	.nav-item {
-		@include bgColor($dark-grey, 0.8);
-		border-bottom: 1px solid $grey;
-		transition: all 500ms ease-in-out;
-		.nav-link {
-			text-decoration: underline;
-		}
-		&:hover {
-			@include bgColor($grey);
-			text-transform: uppercase;
-		}
-		&:hover .nav-link {
-			@include color($blue);
-			text-decoration: underline;
-		}
-		@media screen and (min-width: 768px) {
-			@include bgColor(none);
-			border-radius: 10px;
-			border-bottom: none;
-			margin-left: 5px;
-			width: 96px;
-			&:hover {
-				box-shadow: 0 0 7px 0 $dark-grey;
-			}
-			&:active {
-				box-shadow: none;
-			}
-		}
-	}
+  grid-area: header;
+  .navbar {
+    @media screen and (min-width: 768px) {
+      margin: 0 2rem;
+    }
+  }
+  .navbar-toggler:focus {
+    outline: none;
+  }
+  .navbar-toggler-icon {
+    @include bgColor($grey);
+  }
+  .navbar-toggler-icon {
+    border-radius: 4px;
+  }
+  .navbar-brand,
+  .nav-link {
+    @include color($grey);
+  }
+  .nav-item {
+    @include bgColor($dark-grey, 0.8);
+    border-bottom: 1px solid $grey;
+    transition: all 500ms ease-in-out;
+    .nav-link {
+      text-decoration: underline;
+    }
+    &:hover {
+      @include bgColor($grey);
+      text-transform: uppercase;
+    }
+    &:hover .nav-link {
+      @include color($blue);
+      text-decoration: underline;
+    }
+    @media screen and (min-width: 768px) {
+      @include bgColor(none);
+      border-radius: 10px;
+      border-bottom: none;
+      margin-left: 5px;
+      width: 96px;
+      &:hover {
+        box-shadow: 0 0 7px 0 $dark-grey;
+      }
+      &:active {
+        box-shadow: none;
+      }
+    }
+  }
 }

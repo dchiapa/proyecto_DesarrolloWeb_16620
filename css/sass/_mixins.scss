@@ -1,21 +1,21 @@
 @mixin bgColor($color, $a: 1, $import: false) {
-	@if $color==none {
-		background-color: transparent;
-	} @else {
-		@if $import==true {
-			background-color: rgba($color, $a) !important;
-		}
-		background-color: rgba($color, $a);
-	}
+  @if $color==none {
+    background-color: transparent;
+  } @else {
+    @if $import==true {
+      background-color: rgba($color, $a) !important;
+    }
+    background-color: rgba($color, $a);
+  }
 }
 @mixin color($color) {
-	color: $color !important;
+  color: $color !important;
 }
 
 @mixin content($bgColor) {
-	@include bgColor($bgColor);
-	border-radius: 10px;
-	box-shadow: 0 0 7px 0 $dark-grey;
-	margin: 2em 0;
-	padding: 1em 1rem;
+  @include bgColor($bgColor);
+  border-radius: 10px;
+  box-shadow: 0 0 7px 0 $dark-grey;
+  margin: 2em 0;
+  padding: 1em 1rem;
 }
