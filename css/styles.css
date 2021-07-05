@@ -533,7 +533,9 @@ header .nav-item:hover .nav-link {
           box-shadow: 0 0 7px 0 #323232;
   margin: 2em 0;
   padding: 1em 1rem;
-  max-width: 90%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: calc(100vw - 2rem);
 }
 
 .blogArticle__title {
@@ -541,11 +543,17 @@ header .nav-item:hover .nav-link {
   text-align: center;
   text-shadow: 1px 1px 2px #323232;
   font-size: 2rem;
+  width: 100%;
 }
 
 .blogArticle__subtitle {
   color: red !important;
   font-size: 1.5rem;
+  width: 100%;
+}
+
+.blogArticle__text {
+  width: 100%;
 }
 
 .blogArticle__codeContainer {
@@ -559,11 +567,7 @@ header .nav-item:hover .nav-link {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 2em auto;
-  width: 90%;
-}
-
-.blogArticle__codeContainer :last-child {
-  margin-bottom: 0.5em;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
