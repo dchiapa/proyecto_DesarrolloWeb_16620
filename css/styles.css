@@ -533,9 +533,33 @@ header .nav-item:hover .nav-link {
           box-shadow: 0 0 7px 0 #323232;
   margin: 2em 0;
   padding: 1em 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
   width: calc(100vw - 2rem);
+}
+
+@media screen and (min-width: 576px) {
+  .blogArticle {
+    max-width: 540px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blogArticle {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .blogArticle {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .blogArticle {
+    max-width: 1140px;
+  }
 }
 
 .blogArticle__title {
