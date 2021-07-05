@@ -1,249 +1,247 @@
 main {
-	grid-area: main;
-	min-height: 100%;
+  grid-area: main;
+  min-height: 100%;
 }
 
 .secAbout,
 .aboutIntro {
-	@include content($grey);
-	&__imagePpal {
-		max-width: 350px;
-		width: 70%;
-		@media screen and (min-width: 576px) {
-			width: 50%;
-		}
-		@media screen and (min-width: 768px) {
-			align-self: center;
-			width: 70%;
-		}
-	}
-	&__text {
-		margin-top: 1rem;
-		@media screen and (min-width: 768px) {
-			margin-left: 1rem;
-			width: 60%;
-		}
-	}
+  @include content($grey);
+  &__imagePpal {
+    max-width: 350px;
+    width: 70%;
+    @media screen and (min-width: 576px) {
+      width: 50%;
+    }
+    @media screen and (min-width: 768px) {
+      align-self: center;
+      width: 70%;
+    }
+  }
+  &__text {
+    margin-top: 1rem;
+    @media screen and (min-width: 768px) {
+      margin-left: 1rem;
+      width: 60%;
+    }
+  }
 }
 
 .secAbout {
-	display: grid;
-	grid-gap: 1em;
-	grid-template-areas:
-		'imgPpal'
-		'text'
-		'certTitle'
-		'imgCert';
-	@media screen and (min-width: 768px) {
-		grid-gap: 0;
-		grid-template-areas:
-			'imgPpal text'
-			'certTitle certTitle'
-			'imgCert imgCert';
-	}
-	&__imgPpal {
-		margin-top: 1em;
-		@media screen and (min-width: 768px) {
-			width: 100%;
-		}
-	}
-	&__text {
-		@media screen and (min-width: 768px) {
-			margin: 0 auto;
-			width: 90%;
-		}
-	}
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+    "imgPpal"
+    "text"
+    "certTitle"
+    "imgCert";
+  @media screen and (min-width: 768px) {
+    grid-gap: 0;
+    grid-template-areas:
+      "imgPpal text"
+      "certTitle certTitle"
+      "imgCert imgCert";
+  }
+  &__imgPpal {
+    margin-top: 1em;
+    @media screen and (min-width: 768px) {
+      width: 100%;
+    }
+  }
+  &__text {
+    @media screen and (min-width: 768px) {
+      margin: 0 auto;
+      width: 90%;
+    }
+  }
 
-	.aboutIntro {
-		&__text {
-			margin: 2em;
-		}
-	}
+  .aboutIntro {
+    &__text {
+      margin: 2em;
+    }
+  }
 }
 
 .about {
-	&__images {
-		align-items: center;
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		margin-top: 1em;
-		@media screen and (min-width: 768px) {
-			flex-direction: row;
-			justify-content: space-between;
-			width: 80%;
-			margin: 0 auto;
-		}
-		img {
-			width: 100%;
-			@media screen and (min-width: 768px) {
-				width: 100%;
-			}
-		}
-	}
-	.btn {
-		margin-top: 10px;
-		width: 250px;
-	}
+  &__images {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto;
+    }
+    img {
+      width: 100%;
+      @media screen and (min-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+  .btn {
+    margin-top: 10px;
+    width: 250px;
+  }
 }
 
 .secBlog,
 .blog {
-	&__article {
-		@include content($grey);
-		.btn {
-			margin: 0 auto;
-		}
-	}
+  &__article {
+    @include content($grey);
+    .btn {
+      margin: 0 auto;
+    }
+  }
 }
 
 .secBlog {
-	&__imgContainer {
-		align-items: center;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		@media screen and (min-width: 768px) {
-			flex-direction: row;
-		}
-		img {
-			margin-bottom: 1em;
-			width: 50%;
-			transition: all 1s ease-in-out;
-			&:active,
-			&:hover {
-				transform: rotateY(360deg);
-			}
-			@media screen and (min-width: 768px) {
-				width: 25%;
-			}
-		}
-	}
+  &__imgContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+    img {
+      margin-bottom: 1em;
+      width: 50%;
+      transition: all 1s ease-in-out;
+      &:active,
+      &:hover {
+        transform: rotateY(360deg);
+      }
+      @media screen and (min-width: 768px) {
+        width: 25%;
+      }
+    }
+  }
 }
 .blog {
-	&__title {
-		@include color($grey);
-		text-align: center;
-		text-shadow: 1px 1px 2px $dark-grey;
-		font-size: 2rem;
-	}
+  &__title {
+    @include color($grey);
+    text-align: center;
+    text-shadow: 1px 1px 2px $dark-grey;
+    font-size: 2rem;
+  }
 }
 
 .contact {
-	&__title {
-		font-size: 2rem;
-	}
-	&__form {
-		@include content($grey);
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-	}
-	&__title {
-		text-align: center;
-	}
-	&__input,
-	&__textarea {
-		display: block;
-		margin: 0.5em auto;
-		width: 100%;
-	}
-	&__textarea {
-		resize: none;
-	}
-	&__label,
-	&__buttons {
-		display: block;
-		margin: 0 auto;
-		width: 90%;
-		@media screen and (min-width: 768px) {
-			max-width: 60%;
-		}
-	}
-	&__buttons {
-		display: flex;
-		justify-content: space-evenly;
-		margin-top: 1em;
-		.btn {
-			width: 40%;
-		}
-	}
+  &__title {
+    font-size: 2rem;
+  }
+  &__form {
+    @include content($grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  &__title {
+    text-align: center;
+  }
+  &__input,
+  &__textarea {
+    display: block;
+    margin: 0.5em auto;
+    width: 100%;
+  }
+  &__textarea {
+    resize: none;
+  }
+  &__label,
+  &__buttons {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    @media screen and (min-width: 768px) {
+      max-width: 60%;
+    }
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+    .btn {
+      width: 40%;
+    }
+  }
 }
 
 .blogArticle {
-	@include content($grey);
-	&__title {
-		@include color($red);
-		text-align: center;
-		text-shadow: 1px 1px 2px $dark-grey;
-		font-size: 2rem;
-	}
-	&__subtitle {
-		@include color($red);
-		font-size: 1.5rem;
-	}
-	&__codeContainer {
-		border: 1px solid $dark-grey;
-		border-radius: 10px;
-		display: flex;
-		flex-direction: column;
-		margin: 2em auto;
-		width: 90%;
-		:last-child {
-			margin-bottom: 0.5em;
-		}
-		&:first-of-type {
-			text-align: center;
-		}
-		@media screen and (min-width: 768px) {
-			width: 60%;
-		}
-	}
-	&__codeContent {
-		margin: 0 1em;
-		margin-top: 0.5em;
-	}
-	&__image {
-		display: block;
-		margin: 0 auto;
-		width: 90%;
-		@media screen and (min-width: 768px) {
-			width: 60%;
-		}
-	}
-	.spinner {
-		border: 4px solid rgba(0, 0, 0, 0.1);
-		border-left-color: $blue;
-		border-radius: 50%;
-		height: 36px;
-		margin: 20px auto;
-		width: 36px;
-		animation: spin 500ms linear infinite;
-	}
-	@keyframes spin {
-		0% {
-			transform: rotate(0deg);
-		}
-		100% {
-			transform: rotate(360deg);
-		}
-	}
+  @include content($grey);
+  &__title {
+    @include color($red);
+    text-align: center;
+    text-shadow: 1px 1px 2px $dark-grey;
+    font-size: 2rem;
+  }
+  &__subtitle {
+    @include color($red);
+    font-size: 1.5rem;
+  }
+  &__codeContainer {
+    border: 1px solid $dark-grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 2em auto;
+    width: 90%;
+    :last-child {
+      margin-bottom: 0.5em;
+    }
+    @media screen and (min-width: 768px) {
+      width: 60%;
+    }
+  }
+  &__codeContent {
+    margin: 0 1em;
+    margin-top: 0.5em;
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    @media screen and (min-width: 768px) {
+      width: 60%;
+    }
+  }
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: $blue;
+    border-radius: 50%;
+    height: 36px;
+    margin: 20px auto;
+    width: 36px;
+    animation: spin 500ms linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 .tableArticle {
-	border: 1px solid $dark-grey;
-	border-collapse: separate;
-	border-radius: 10px;
-	margin: 1em 0;
-	padding: 1em;
-	&__row {
-		&Header,
-		&Content {
-			border: 1px solid $dark-grey;
-			text-align: center;
-		}
-		&Header:first-of-type {
-			width: 30%;
-		}
-	}
+  border: 1px solid $dark-grey;
+  border-collapse: separate;
+  border-radius: 10px;
+  margin: 1em 0;
+  padding: 1em;
+  &__row {
+    &Header,
+    &Content {
+      border: 1px solid $dark-grey;
+      text-align: center;
+    }
+    &Header:first-of-type {
+      width: 30%;
+    }
+  }
 }
