@@ -625,6 +625,7 @@ header .nav-item:hover .nav-link {
 .footer__text {
   color: #d4d4d4 !important;
   text-shadow: 1px 1px 2px #000;
+  width: 75%;
 }
 
 .footer__link {
