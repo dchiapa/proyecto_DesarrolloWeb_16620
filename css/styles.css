@@ -93,7 +93,7 @@ h3 {
 }
 
 h2 {
-  color: #ebebeb !important;
+  color: #d4d4d4 !important;
 }
 
 h3 {
@@ -118,7 +118,7 @@ h3 {
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  color: #ebebeb !important;
+  color: #d4d4d4 !important;
   text-decoration: underline;
 }
 
@@ -177,7 +177,7 @@ header .navbar-toggler:focus {
 }
 
 header .navbar-toggler-icon {
-  background-color: #ebebeb;
+  background-color: #d4d4d4;
 }
 
 header .navbar-toggler-icon {
@@ -186,12 +186,12 @@ header .navbar-toggler-icon {
 
 header .navbar-brand,
 header .nav-link {
-  color: #ebebeb !important;
+  color: #d4d4d4 !important;
 }
 
 header .nav-item {
   background-color: rgba(50, 50, 50, 0.8);
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid #d4d4d4;
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
@@ -201,7 +201,7 @@ header .nav-item .nav-link {
 }
 
 header .nav-item:hover {
-  background-color: #ebebeb;
+  background-color: #d4d4d4;
   text-transform: uppercase;
 }
 
@@ -237,7 +237,7 @@ main {
 
 .secAbout,
 .aboutIntro {
-  background-color: #ebebeb;
+  background-color: #d4d4d4;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 7px 0 #323232;
           box-shadow: 0 0 7px 0 #323232;
@@ -363,7 +363,7 @@ main {
 
 .secBlog__article,
 .blog__article {
-  background-color: #ebebeb;
+  background-color: #d4d4d4;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 7px 0 #323232;
           box-shadow: 0 0 7px 0 #323232;
@@ -420,7 +420,7 @@ main {
 }
 
 .blog__title {
-  color: #ebebeb !important;
+  color: #d4d4d4 !important;
   text-align: center;
   text-shadow: 1px 1px 2px #323232;
   font-size: 2rem;
@@ -431,7 +431,7 @@ main {
 }
 
 .contact__form {
-  background-color: #ebebeb;
+  background-color: #d4d4d4;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 7px 0 #323232;
           box-shadow: 0 0 7px 0 #323232;
@@ -490,7 +490,7 @@ main {
 }
 
 .blogArticle {
-  background-color: #ebebeb;
+  background-color: #d4d4d4;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 7px 0 #323232;
           box-shadow: 0 0 7px 0 #323232;
@@ -608,12 +608,12 @@ main {
 }
 
 .footer__text {
-  color: #ebebeb !important;
+  color: #d4d4d4 !important;
   text-shadow: 1px 1px 2px #000;
 }
 
 .footer__link {
-  color: #ebebeb !important;
+  color: #d4d4d4 !important;
   text-decoration: underline;
 }
 /*# sourceMappingURL=styles.css.map */
