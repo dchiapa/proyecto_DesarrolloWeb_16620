@@ -11,7 +11,12 @@ body {
     "footer";
   @include bgColor($blue);
 }
+main {
+  grid-area: main;
+  min-height: 100%;
+}
 
+/*     textos generales     */
 h1,
 h2,
 h3 {
@@ -40,27 +45,11 @@ h3 {
   display: flex;
   letter-spacing: 2px;
   margin: 0;
+  margin-bottom: 1rem;
   overflow: hidden;
   white-space: nowrap;
 }
-@keyframes typing {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-}
 
-@keyframes blink {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
 h2,
 h3 {
   text-align: center;
@@ -84,7 +73,6 @@ h3 {
   box-shadow: 1px 1px 4px $dark-grey;
   outline: none !important;
   width: 110px;
-
   &:active,
   &:focus,
   &:hover {
@@ -98,11 +86,6 @@ h3 {
   &:hover {
     animation: scale 1s linear;
   }
-  @keyframes scale {
-    50% {
-      transform: scale(1.1);
-    }
-  }
 }
 .carousel-indicators {
   bottom: -15px;
@@ -110,7 +93,6 @@ h3 {
     @include bgColor($dark-grey);
   }
 }
-
 .carousel-control-prev,
 .carousel-control-next {
   @include bgColor($dark-grey, 0.7);
