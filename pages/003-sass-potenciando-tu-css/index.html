@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Sass: Potenciando tu CSS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aparte de los importantes cambios en las etiquetas ya existentes (como
+		&lt;input /&gt;) y la eliminación de otras (como &lt;xmp&gt;), uno de
+		los cambios mas importante es la adición de nuevas etiquetas. Si bien
+		varias de estas vinieron a solucionar nuestra vida como programadores,
+		otras tienen una funcionalidad idéntica a la mítica etiqueta
+		&lt;div&gt;. Estas son las etiquetas semánticas."
+    />
+    <meta
+      name="keywords"
+      content="HTML5, desarrollo web, Front End, semántica"
+    />
+    <link rel="stylesheet" href="../../bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="../../media/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="d-flex">
+      <nav
+        class="
+          navbar navbar-expand-md navbar-light
+          p-0
+          justify-content-between
+          w-100
+        "
+      >
+        <a class="navbar-brand ml-2" href="../../index.html">DChiapa</a>
+        <button
+          class="navbar-toggler border-0 p-"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-center" href="../../index.html">
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="../blog.html">Blog</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="../about.html"> Sobre mí </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <article class="blogArticle">
+        <h1 class="blogArticle__title">Sass: Potenciando tu CSS</h1>
+        <p class="blogArticle__text">
+          A la hora de escribir estilos CSS, hay muchas veces que tenemos que
+          repetir el código, o repetir los selectores para que tomen el mismo
+          código, pero eso se acabo con SASS.
+        </p>
+        <p class="blogArticle__text">
+          SASS es un pre procesador de CSS, es decir que tiene sintaxis parecida
+          a CSS, pero lo que nosotros escribamos en SASS debemos compilarlo, es
+          decir transformarlo, en CSS. Es decir que si al final de cuentas
+          estaremos creando CSS, pero de manera mas rápida.
+        </p>
+        <h2 class="blogArticle__subtitle">Variables</h2>
+        <p class="blogArticle__text">
+          En SASS, podemos utilizar variables de una manera mas sencilla:
+        </p>
+        <section class="blogArticle__codeContainer">
+          <div class="blogArticle__codeContent">
+            <pre><code>$Color: #323232;</code></pre>
+          </div>
+        </section>
+        <p>Luego llamamos a la variable con la siguiente sintaxis:</p>
+        <section class="blogArticle__codeContainer">
+          <div class="blogArticle__codeContent">
+            <pre><code>.texto{
+  color: $Color;
+}</code></pre>
+          </div>
+        </section>
+        <p>En CSS se ve asi:</p>
+        <section class="blogArticle__codeContainer">
+          <div class="blogArticle__codeContent">
+            <pre><code>.texto{
+  color: #323232;
+}</code></pre>
+          </div>
+        </section>
+        <h2 class="blogArticle__subtitle">Anidado</h2>
+        <p class="blogArticle__text">
+          Se pueden anidar estilos, en lugar de escribir selectores descendente:
+        </p>
+        <section class="blogArticle__codeContainer">
+          <div class="blogArticle__codeContent">
+            <pre><code>.padre{
+  border: 4px solid rgba(0,0,0, 0.1);
+  border-left-color: #467acf;
+  border-radius: 50%;
+  height: 36px;
+  width:36px; 
+  .hijo1{
+    height: 20px;
+    width: 20px; 
+  }
+  .hijo2{
+  height: 25px;
+  width: 25px; 
+  }
+}</code></pre>
+          </div>
+        </section>
+        <p class="blogArticle__text">En CSS se ve de esta manera:</p>
+        <section class="blogArticle__codeContainer">
+          <div class="blogArticle__codeContent">
+            <pre><code>.padre{
+  border: 4px solid rgba(0,0,0, 0.1);
+  border-left-color: #467acf;
+  border-radius: 50%;
+  height: 30px;
+  width:30px;
+}
+.padre .hijo1{
+  height: 20px;
+  width: 20px;
+}
+.padre .hijo2{
+  height: 25px;
+  width: 25px; 
+}</code></pre>
+          </div>
+        </section>
+        <h2 class="blogArticle__subtitle">Mixins</h2>
+        <p>Reutilizamos codigo con mixins. Creamos el mixin con @mixin:</p>
+        <section class="blogArticle__codeContainer">
+          <div class="blogArticle__codeContent">
+            <pre><code>@mixin content($bgColor) {
+  background-color: $bgColor;
+  border-radius: 10px;
+  box-shadow: 0 0 7px 0 $dark-grey;
+  margin: 2em 0;
+  padding: 1em 1rem;
+}</code></pre>
+          </div>
+        </section>
+        <p>Luego lo aplicamos con @include:</p>
+        <section class="blogArticle__codeContainer">
+          <div class="blogArticle__codeContent">
+            <pre><code>.aboutIntro {
+  @include content($grey);
+  &__imagePpal {
+    max-width: 350px;
+    width: 70%;
+    @media screen and (min-width: 576px) {
+      width: 50%;
+    }
+  }
+}</code></pre>
+          </div>
+        </section>
+        <p>Asi en CSS tendremos:</p>
+        <section class="blogArticle__codeContainer">
+          <div class="blogArticle__codeContent">
+            <pre><code>.aboutIntro {
+  background-color: #ebebeb;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 7px 0 #323232;
+  box-shadow: 0 0 7px 0 #323232;
+  margin: 2em 0;
+  padding: 1em 1rem;
+}</code></pre>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer
+      class="
+        footer
+        container-fluid
+        d-flex
+        align-items-center
+        justify-content-center
+        px-0
+      "
+    >
+      <p class="footer__text text-center m-0">
+        Diseñado y programado por
+        <a
+          class="footer__link"
+          href="http://www.diegochiapa.com.ar"
+          target="_blank"
+        >
+          Diego Chiapa
+        </a>
+        - 2021
+      </p>
+    </footer>
+    <script src="../../bootstrap/dist/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../../bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
