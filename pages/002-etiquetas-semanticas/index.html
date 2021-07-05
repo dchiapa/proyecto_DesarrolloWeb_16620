@@ -1,225 +1,226 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<title>HTML5: etiquetas semánticas</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="Aparte de los importantes cambios en las etiquetas ya existentes (como
+  <head>
+    <title>HTML5: etiquetas semánticas</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aparte de los importantes cambios en las etiquetas ya existentes (como
 		&lt;input /&gt;) y la eliminación de otras (como &lt;xmp&gt;), uno de
 		los cambios mas importante es la adición de nuevas etiquetas. Si bien
 		varias de estas vinieron a solucionar nuestra vida como programadores,
 		otras tienen una funcionalidad idéntica a la mítica etiqueta
 		&lt;div&gt;. Estas son las etiquetas semánticas."
-		/>
-		<meta
-			name="keywords"
-			content="HTML5, desarrollo web, Front End, semántica"
-		/>
-		<link rel="stylesheet" href="../../bootstrap/dist/css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="../../css/styles.css" />
-		<link
-			rel="shortcut icon"
-			href="../../media/favicon.ico"
-			type="image/x-icon"
-		/>
-	</head>
-	<body>
-		<header class="d-flex">
-			<nav
-				class="
-					navbar navbar-expand-md navbar-light
-					p-0
-					justify-content-between
-					w-100
-				"
-			>
-				<a class="navbar-brand ml-2" href="../../index.html">DChiapa</a>
-				<button
-					class="navbar-toggler border-0 p-"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div
-					class="collapse navbar-collapse d-lg-flex justify-content-end"
-					id="navbarSupportedContent"
-				>
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link text-center" href="../../index.html">
-								Inicio
-							</a>
-						</li>
-						<li class="nav-item text-center">
-							<a class="nav-link" href="../blog.html">Blog</a>
-						</li>
-						<li class="nav-item text-center">
-							<a class="nav-link" href="../about.html"> Sobre mí </a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
-		<main class="container">
-			<article class="blogArticle">
-				<h1 class="blogArticle__title">Etiquetas semánticas en HTML5</h1>
-				<p class="blogArticle__texto">
-					Aparte de los importantes cambios en las etiquetas ya existentes (como
-					&lt;input /&gt;) y la eliminación de otras (como &lt;xmp&gt;), uno de
-					los cambios mas importante es la adición de nuevas etiquetas. Si bien
-					varias de estas vinieron a solucionar nuestra vida como programadores,
-					otras tienen una funcionalidad idéntica a la mítica etiqueta
-					&lt;div&gt;. Estas son las etiquetas semánticas.
-				</p>
-				<p class="blogArticle__text">
-					Las etiquetas semánticas ayudan a la implementación de los estándares
-					de la Web Semántica, cuya finalidad es hacer el contenido de internet
-					legible para aplicaciones informáticas. Uno de los usos mas
-					importantes de este tipo de etiquetas es la de marcar la información
-					de la pagina para ser indexada por los buscadores web como Google.
-				</p>
-				<h2 class="blogArticle__subtitle">Etiquetas</h2>
-				<table class="tableArticle">
-					<thead class="tableArticle__header">
-						<tr class="tableArticle__row">
-							<th class="tableArticle__rowHeader">Tag HTML</th>
-							<th class="tableArticle__rowHeader">Descripción</th>
-						</tr>
-					</thead>
-					<tbody class="tableArticle__body">
-						<tr class="tableArticle__row">
-							<td class="tableArticle__rowContent">header</td>
-							<td class="tableArticle__rowContent">
-								<span>
-									Representa un grupo de ayudas introductorias o de navegación.
-									También puede contener logos, formulario de búsqueda o tabla
-									de contenidos.
-								</span>
-							</td>
-						</tr>
-						<tr class="tableArticle__row">
-							<td class="tableArticle__rowContent">nav</td>
-							<td class="tableArticle__rowContent">
-								<span>
-									Sección de una página que enlaza a otras páginas o partes de
-									la misma. Sección con links de navegación.
-								</span>
-							</td>
-						</tr>
-						<tr class="tableArticle__row">
-							<td class="tableArticle__rowContent">aside</td>
-							<td class="tableArticle__rowContent">
-								<span>
-									Sección de una página que contiene contenido relacionado
-									tangencialmente al de su alrededor. Por lo general se utilizan
-									como barras laterales.
-								</span>
-							</td>
-						</tr>
-						<tr class="tableArticle__row">
-							<td class="tableArticle__rowContent">main</td>
-							<td class="tableArticle__rowContent">
-								<span>
-									Representa el contenido predominante de la página. Una página
-									debe tener solo un tag &lt;main&gt;. Solo debe estar contenida
-									por tags de tipo &lt;html&gt;, &lt;body&gt;, &lt;div&gt; o
-									&lt;form&gt;.
-								</span>
-							</td>
-						</tr>
-						<tr class="tableArticle__row">
-							<td class="tableArticle__rowContent">article</td>
-							<td class="tableArticle__rowContent">
-								<span>
-									Representa una sección de contenido que puede ser distribuido
-									de forma independiente. Puede ser un post en un foro, un
-									artículo de periódico, una entrada de un blog, un comentario,
-									etc.
-								</span>
-							</td>
-						</tr>
-						<tr class="tableArticle__row">
-							<td class="tableArticle__rowContent">section</td>
-							<td class="tableArticle__rowContent">
-								<span>
-									Representa a una sección genérica de una página. Agrupa
-									contenidos que tienen una relación temática entre si.
-								</span>
-							</td>
-						</tr>
-						<tr class="tableArticle__row">
-							<td class="tableArticle__rowContent">footer</td>
-							<td class="tableArticle__rowContent">
-								<span>
-									Representa un pie de página para el elemento que lo contiene.
-									Generalmente contiene información acerca de quién lo escribió,
-									enlaces a documentos relacionados, datos de derechos de autor
-									o similares.
-								</span>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				<h2 class="blogArticle__subtitle">Ejemplo:</h2>
-				<section class="blogArticle__codeContainer">
-					<span class="blogArticle__codeContent">
-						&lt;header&gt;&lt;/header&gt;
-					</span>
-					<span class="blogArticle__codeContent">
-						&lt;nav&gt;&lt;/nav&gt;
-					</span>
-					<span class="blogArticle__codeContent"> &lt;article&gt; </span>
-					<span class="blogArticle__codeContent">
-						&lt;section&gt;&lt;/section&gt;
-					</span>
-					<span class="blogArticle__codeContent"> &lt;/article&gt; </span>
-					<span class="blogArticle__codeContent">
-						&lt;aside&gt;&lt;/aside&gt;
-					</span>
-					<span class="blogArticle__codeContent">
-						&lt;footer&gt;&lt;/footer&gt;
-					</span>
-				</section>
-				<p class="blogArticle__text">
-					Agregando un poco de estilos con CSS a la estructura HTML, podemos
-					verla así:
-				</p>
-				<img
-					class="blogArticle__image"
-					src="../../media/html5.png"
-					alt="estructura de HTML5 básica"
-				/>
-			</article>
-		</main>
-		<footer
-			class="
-				footer
-				container-fluid
-				d-flex
-				align-items-center
-				justify-content-center
-				px-0
-			"
-		>
-			<p class="footer__text text-center m-0">
-				Diseñado y programado por
-				<a
-					class="footer__link"
-					href="http://www.diegochiapa.com.ar"
-					target="_blank"
-					>Diego Chiapa</a
-				>
-				- 2021
-			</p>
-		</footer>
-		<script src="../../bootstrap/dist/js/jquery-3.5.1.slim.min.js"></script>
-		<script src="../../bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-	</body>
+    />
+    <meta
+      name="keywords"
+      content="HTML5, desarrollo web, Front End, semántica"
+    />
+    <link rel="stylesheet" href="../../bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="../../media/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="d-flex">
+      <nav
+        class="
+          navbar navbar-expand-md navbar-light
+          p-0
+          justify-content-between
+          w-100
+        "
+      >
+        <a class="navbar-brand ml-2" href="../../index.html">DChiapa</a>
+        <button
+          class="navbar-toggler border-0 p-"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-center" href="../../index.html">
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="../blog.html">Blog</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="../about.html"> Sobre mí </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <article class="blogArticle">
+        <h1 class="blogArticle__title">Etiquetas semánticas en HTML5</h1>
+        <p class="blogArticle__texto">
+          Aparte de los importantes cambios en las etiquetas ya existentes (como
+          &lt;input /&gt;) y la eliminación de otras (como &lt;xmp&gt;), uno de
+          los cambios mas importante es la adición de nuevas etiquetas. Si bien
+          varias de estas vinieron a solucionar nuestra vida como programadores,
+          otras tienen una funcionalidad idéntica a la mítica etiqueta
+          &lt;div&gt;. Estas son las etiquetas semánticas.
+        </p>
+        <p class="blogArticle__text">
+          Las etiquetas semánticas ayudan a la implementación de los estándares
+          de la Web Semántica, cuya finalidad es hacer el contenido de internet
+          legible para aplicaciones informáticas. Uno de los usos mas
+          importantes de este tipo de etiquetas es la de marcar la información
+          de la pagina para ser indexada por los buscadores web como Google.
+        </p>
+        <h2 class="blogArticle__subtitle">Etiquetas</h2>
+        <table class="tableArticle">
+          <thead class="tableArticle__header">
+            <tr class="tableArticle__row">
+              <th class="tableArticle__rowHeader">Tag HTML</th>
+              <th class="tableArticle__rowHeader">Descripción</th>
+            </tr>
+          </thead>
+          <tbody class="tableArticle__body">
+            <tr class="tableArticle__row">
+              <td class="tableArticle__rowContent">header</td>
+              <td class="tableArticle__rowContent">
+                <span>
+                  Representa un grupo de ayudas introductorias o de navegación.
+                  También puede contener logos, formulario de búsqueda o tabla
+                  de contenidos.
+                </span>
+              </td>
+            </tr>
+            <tr class="tableArticle__row">
+              <td class="tableArticle__rowContent">nav</td>
+              <td class="tableArticle__rowContent">
+                <span>
+                  Sección de una página que enlaza a otras páginas o partes de
+                  la misma. Sección con links de navegación.
+                </span>
+              </td>
+            </tr>
+            <tr class="tableArticle__row">
+              <td class="tableArticle__rowContent">aside</td>
+              <td class="tableArticle__rowContent">
+                <span>
+                  Sección de una página que contiene contenido relacionado
+                  tangencialmente al de su alrededor. Por lo general se utilizan
+                  como barras laterales.
+                </span>
+              </td>
+            </tr>
+            <tr class="tableArticle__row">
+              <td class="tableArticle__rowContent">main</td>
+              <td class="tableArticle__rowContent">
+                <span>
+                  Representa el contenido predominante de la página. Una página
+                  debe tener solo un tag &lt;main&gt;. Solo debe estar contenida
+                  por tags de tipo &lt;html&gt;, &lt;body&gt;, &lt;div&gt; o
+                  &lt;form&gt;.
+                </span>
+              </td>
+            </tr>
+            <tr class="tableArticle__row">
+              <td class="tableArticle__rowContent">article</td>
+              <td class="tableArticle__rowContent">
+                <span>
+                  Representa una sección de contenido que puede ser distribuido
+                  de forma independiente. Puede ser un post en un foro, un
+                  artículo de periódico, una entrada de un blog, un comentario,
+                  etc.
+                </span>
+              </td>
+            </tr>
+            <tr class="tableArticle__row">
+              <td class="tableArticle__rowContent">section</td>
+              <td class="tableArticle__rowContent">
+                <span>
+                  Representa a una sección genérica de una página. Agrupa
+                  contenidos que tienen una relación temática entre si.
+                </span>
+              </td>
+            </tr>
+            <tr class="tableArticle__row">
+              <td class="tableArticle__rowContent">footer</td>
+              <td class="tableArticle__rowContent">
+                <span>
+                  Representa un pie de página para el elemento que lo contiene.
+                  Generalmente contiene información acerca de quién lo escribió,
+                  enlaces a documentos relacionados, datos de derechos de autor
+                  o similares.
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 class="blogArticle__subtitle">Ejemplo:</h2>
+        <section class="blogArticle__codeContainer">
+          <span class="blogArticle__codeContent">
+            &lt;header&gt;&lt;/header&gt;
+          </span>
+          <span class="blogArticle__codeContent">
+            &lt;nav&gt;&lt;/nav&gt;
+          </span>
+          <span class="blogArticle__codeContent"> &lt;article&gt; </span>
+          <span class="blogArticle__codeContent">
+            &lt;section&gt;&lt;/section&gt;
+          </span>
+          <span class="blogArticle__codeContent"> &lt;/article&gt; </span>
+          <span class="blogArticle__codeContent">
+            &lt;aside&gt;&lt;/aside&gt;
+          </span>
+          <span class="blogArticle__codeContent">
+            &lt;footer&gt;&lt;/footer&gt;
+          </span>
+        </section>
+        <p class="blogArticle__text">
+          Agregando un poco de estilos con CSS a la estructura HTML, podemos
+          verla así:
+        </p>
+        <img
+          class="blogArticle__image"
+          src="../../media/html5.png"
+          alt="estructura de HTML5 básica"
+        />
+      </article>
+    </main>
+    <footer
+      class="
+        footer
+        container-fluid
+        d-flex
+        align-items-center
+        justify-content-center
+        px-0
+      "
+    >
+      <p class="footer__text text-center m-0">
+        Diseñado y programado por
+        <a
+          class="footer__link"
+          href="http://www.diegochiapa.com.ar"
+          target="_blank"
+        >
+          Diego Chiapa
+        </a>
+        - 2021
+      </p>
+    </footer>
+    <script src="../../bootstrap/dist/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../../bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
