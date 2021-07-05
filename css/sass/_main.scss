@@ -1,32 +1,10 @@
-main {
-  grid-area: main;
-  min-height: 100%;
-}
-
-.secAbout,
-.aboutIntro {
+.indexAbout,
+.about__intro,
+.about__certificates {
   @include content($grey);
-  &__imagePpal {
-    max-width: 350px;
-    width: 70%;
-    @media screen and (min-width: 576px) {
-      width: 50%;
-    }
-    @media screen and (min-width: 768px) {
-      align-self: center;
-      width: 70%;
-    }
-  }
-  &__text {
-    margin-top: 1rem;
-    @media screen and (min-width: 768px) {
-      margin-left: 1rem;
-      width: 60%;
-    }
-  }
 }
 
-.secAbout {
+.indexAbout {
   display: grid;
   grid-gap: 1em;
   grid-template-areas:
@@ -51,6 +29,9 @@ main {
     @media screen and (min-width: 768px) {
       margin: 0 auto;
       width: 90%;
+      & title__text {
+        margin: 1rem 0;
+      }
     }
   }
 
@@ -62,6 +43,32 @@ main {
 }
 
 .about {
+  /*  about__intro  */
+  &__text {
+    margin-top: 1rem;
+    @media screen and (min-width: 768px) {
+      margin-left: 1rem;
+      width: 60%;
+    }
+  }
+  &__imagePpal {
+    max-width: 350px;
+    width: 70%;
+    @media screen and (min-width: 576px) {
+      width: 50%;
+    }
+    @media screen and (min-width: 768px) {
+      align-self: center;
+      width: 70%;
+    }
+  }
+  .btn {
+    margin-top: 10px;
+    width: 250px;
+  }
+  &__certificates {
+  }
+  /*  about__certificates  */
   &__images {
     align-items: center;
     display: flex;
@@ -80,10 +87,6 @@ main {
         width: 100%;
       }
     }
-  }
-  .btn {
-    margin-top: 10px;
-    width: 250px;
   }
 }
 
@@ -217,14 +220,6 @@ main {
     margin: 20px auto;
     width: 36px;
     animation: spin 500ms linear infinite;
-  }
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
   }
 }
 
