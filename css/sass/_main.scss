@@ -176,18 +176,18 @@
   @include content($grey);
   margin-left: auto;
   margin-right: auto;
-  width: calc(100vw - 2rem);
+  width: calc(100% - 30px);
   @media screen and (min-width: 576px) {
-    max-width: 540px;
+    max-width: 510px;
   }
   @media screen and (min-width: 768px) {
-    max-width: 720px;
+    max-width: 690px;
   }
   @media screen and (min-width: 992px) {
-    max-width: 960px;
+    max-width: 930px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 1140px;
+    max-width: 1110px;
   }
   &__title {
     @include color($red);
