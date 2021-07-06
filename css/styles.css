@@ -535,30 +535,30 @@ header .nav-item:hover .nav-link {
   padding: 1em 1rem;
   margin-left: auto;
   margin-right: auto;
-  width: calc(100vw - 2rem);
+  width: calc(100% - 30px);
 }
 
 @media screen and (min-width: 576px) {
   .blogArticle {
-    max-width: 540px;
+    max-width: 510px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .blogArticle {
-    max-width: 720px;
+    max-width: 690px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .blogArticle {
-    max-width: 960px;
+    max-width: 930px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .blogArticle {
-    max-width: 1140px;
+    max-width: 1110px;
   }
 }
 
