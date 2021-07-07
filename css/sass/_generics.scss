@@ -2,6 +2,10 @@
   font-family: "Merriweather", serif;
   font-size: 18px;
 }
+html,
+body {
+  min-height: 100vh;
+}
 body {
   display: grid;
   grid-auto-rows: 50px auto 50px;
