@@ -87,6 +87,32 @@
   }
 }
 
+/* sección intro */
+.indexIntro {
+  @include content($grey);
+  &__imgContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+    img {
+      margin-bottom: 1em;
+      width: 50%;
+      transition: all 1s ease-in-out;
+      &:active,
+      &:hover {
+        transform: rotateY(360deg);
+      }
+      @media screen and (min-width: 768px) {
+        width: 25%;
+      }
+    }
+  }
+}
+
 /* sección y página blog */
 .blog,
 .indexBlog {
