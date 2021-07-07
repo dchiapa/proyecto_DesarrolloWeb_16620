@@ -396,22 +396,14 @@ header .nav-item:hover .nav-link {
 }
 
 /* sección y página blog */
-.indexBlog__article,
-.blog__article {
-  background-color: #d4d4d4;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0 7px 0 #323232;
-          box-shadow: 0 0 7px 0 #323232;
-  margin: 2em 0;
-  padding: 1em 1rem;
+.blog__title {
+  color: #d4d4d4 !important;
+  text-align: center;
+  text-shadow: 1px 1px 2px #323232;
+  font-size: 2rem;
 }
 
-.indexBlog__article .btn,
-.blog__article .btn {
-  margin: 0 auto;
-}
-
-.indexBlog__imgContainer {
+.blog__articles {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -427,8 +419,8 @@ header .nav-item:hover .nav-link {
           justify-content: space-between;
 }
 
-@media screen and (min-width: 768px) {
-  .indexBlog__imgContainer {
+@media screen and (min-width: 576px) {
+  .blog__articles {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -436,29 +428,41 @@ header .nav-item:hover .nav-link {
   }
 }
 
-.indexBlog__imgContainer img {
-  margin-bottom: 1em;
-  width: 50%;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+.blog .article {
+  background-color: #d4d4d4;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 7px 0 #323232;
+          box-shadow: 0 0 7px 0 #323232;
+  margin: 2em 0;
+  padding: 1em 1rem;
+  color: #323232 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
 }
 
-.indexBlog__imgContainer img:active, .indexBlog__imgContainer img:hover {
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
-}
-
-@media screen and (min-width: 768px) {
-  .indexBlog__imgContainer img {
-    width: 25%;
+@media screen and (min-width: 576px) {
+  .blog .article {
+    width: 45%;
   }
 }
 
-.blog__title {
-  color: #d4d4d4 !important;
-  text-align: center;
-  text-shadow: 1px 1px 2px #323232;
-  font-size: 2rem;
+.blog .article__image {
+  max-width: 240px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.blog .article__title {
+  color: red !important;
+  margin: 1rem 0;
 }
 
 /* sección contacto */
