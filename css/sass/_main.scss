@@ -88,7 +88,9 @@
 }
 
 /* sección y página blog */
-.blog {
+.blog,
+.indexBlog {
+  margin: 0 2rem;
   &__title {
     @include color($grey);
     text-align: center;
@@ -102,6 +104,8 @@
     justify-content: space-between;
     @media screen and(min-width:576px) {
       flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
   }
   .article {
@@ -113,9 +117,17 @@
     text-decoration: none;
     width: 100%;
     @media screen and(min-width:576px) {
-      width: 45%;
+      width: calc(50% - 2rem);
     }
     @media screen and(min-width:768px) {
+      width: 30%;
+    }
+    &:hover {
+      @include bgColor($dark-grey);
+      @include color($grey);
+      h2 {
+        text-shadow: 2px 2px 2px $grey;
+      }
     }
     &__image {
       max-width: 240px;
