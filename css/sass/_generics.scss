@@ -66,6 +66,12 @@ h3 {
   @include color($red);
   letter-spacing: 0.5rem;
 }
+p {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
 .btn {
   display: block;
   margin: 0 auto;
@@ -90,15 +96,4 @@ h3 {
   &:hover {
     animation: scale 1s linear;
   }
-}
-.carousel-indicators {
-  bottom: -15px;
-  li {
-    @include bgColor($dark-grey);
-  }
-}
-.carousel-control-prev,
-.carousel-control-next {
-  @include bgColor($dark-grey, 0.7);
-  width: 13%;
 }

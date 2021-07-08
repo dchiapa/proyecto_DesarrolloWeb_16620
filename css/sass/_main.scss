@@ -1,45 +1,7 @@
 /* sección y página about */
-.indexAbout,
 .about__intro,
 .about__certificates {
   @include content($grey);
-}
-.indexAbout {
-  display: grid;
-  grid-gap: 1em;
-  grid-template-areas:
-    "imgPpal"
-    "text"
-    "certTitle"
-    "imgCert";
-  @media screen and (min-width: 768px) {
-    grid-gap: 0;
-    grid-template-areas:
-      "imgPpal text"
-      "certTitle certTitle"
-      "imgCert imgCert";
-  }
-  &__imgPpal {
-    margin-top: 1em;
-    @media screen and (min-width: 768px) {
-      width: 100%;
-    }
-  }
-  &__text {
-    @media screen and (min-width: 768px) {
-      margin: 0 auto;
-      width: 90%;
-      & title__text {
-        margin: 1rem 0;
-      }
-    }
-  }
-
-  .aboutIntro {
-    &__text {
-      margin: 2em;
-    }
-  }
 }
 .about {
   /*  about__intro  */
@@ -51,6 +13,7 @@
     }
   }
   &__imagePpal {
+    margin: 0 auto;
     max-width: 350px;
     width: 70%;
     @media screen and (min-width: 576px) {
@@ -139,7 +102,6 @@
     @include color($dark-grey);
     display: flex;
     flex-direction: column;
-    text-align: center;
     text-decoration: none;
     width: 100%;
     @media screen and(min-width:576px) {
@@ -167,6 +129,9 @@
     &__title {
       @include color($red);
       margin: 1rem 0;
+    }
+    &__description {
+      text-align: center;
     }
   }
 }
