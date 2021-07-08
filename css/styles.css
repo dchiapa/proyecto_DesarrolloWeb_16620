@@ -534,15 +534,23 @@ header .nav-item:hover .nav-link {
   }
 }
 
-.blog .article:hover,
-.indexBlog .article:hover {
+.blog .article:hover, .blog .article:active,
+.indexBlog .article:hover,
+.indexBlog .article:active {
   background-color: #323232;
   color: #d4d4d4 !important;
 }
 
-.blog .article:hover h2,
-.indexBlog .article:hover h2 {
+.blog .article:hover h2, .blog .article:active h2,
+.indexBlog .article:hover h2,
+.indexBlog .article:active h2 {
   text-shadow: 2px 2px 2px #d4d4d4;
+}
+
+.blog .article:hover .article__info, .blog .article:active .article__info,
+.indexBlog .article:hover .article__info,
+.indexBlog .article:active .article__info {
+  border-top-color: #d4d4d4;
 }
 
 .blog .article__image,
@@ -560,6 +568,29 @@ header .nav-item:hover .nav-link {
 
 .indexBlog {
   margin: 0;
+}
+
+.article__info,
+.blogArticle__info {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #323232;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1rem;
+}
+
+.article__info img,
+.blogArticle__info img {
+  border-radius: 50%;
+  height: 40px;
+  margin: 0 0.5rem;
+  width: 40px;
 }
 
 /* sección contacto */
@@ -716,6 +747,12 @@ header .nav-item:hover .nav-link {
   .blogArticle__image {
     width: 60%;
   }
+}
+
+.blogArticle__info {
+  border-top: none;
+  padding-bottom: 1rem;
+  padding-top: 0;
 }
 
 .blogArticle .spinner {
