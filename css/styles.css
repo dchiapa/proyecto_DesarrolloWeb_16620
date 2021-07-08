@@ -493,9 +493,9 @@ header .nav-item:hover .nav-link {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -556,6 +556,10 @@ header .nav-item:hover .nav-link {
 .indexBlog .article__title {
   color: red !important;
   margin: 1rem 0;
+}
+
+.indexBlog {
+  margin: 0;
 }
 
 /* sección contacto */
@@ -632,7 +636,7 @@ header .nav-item:hover .nav-link {
   padding: 1em 1rem;
   margin-left: auto;
   margin-right: auto;
-  width: calc(100% - 30px);
+  width: calc(100vw - 30px);
 }
 
 @media screen and (min-width: 576px) {
