@@ -131,7 +131,7 @@
     @media screen and(min-width:576px) {
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-evenly;
+      justify-content: space-between;
     }
   }
   .article {
@@ -166,7 +166,9 @@
     }
   }
 }
-
+.indexBlog {
+  margin: 0;
+}
 /* sección contacto */
 .contact {
   &__title {
