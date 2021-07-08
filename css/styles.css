@@ -473,6 +473,9 @@ header .nav-item:hover .nav-link {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-decoration: none;
   width: 100%;
 }
@@ -480,6 +483,7 @@ header .nav-item:hover .nav-link {
 @media screen and (min-width: 576px) {
   .blog .article,
   .indexBlog .article {
+    min-height: 700px;
     width: calc(50% - 2rem);
   }
 }
