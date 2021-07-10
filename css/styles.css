@@ -74,6 +74,36 @@
   }
 }
 
+/*     imágenes tecnologías     */
+@-webkit-keyframes mostrarImagen {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(45deg);
+            transform: rotateY(45deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+@keyframes mostrarImagen {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(45deg);
+            transform: rotateY(45deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
 * {
   font-family: "Merriweather", serif;
   font-size: 18px;
@@ -396,13 +426,11 @@ header .nav-item:hover .nav-link {
 .indexIntro__imgContainer img {
   margin-bottom: 1em;
   width: 50%;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
 }
 
 .indexIntro__imgContainer img:active, .indexIntro__imgContainer img:hover {
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
+  -webkit-animation: mostrarImagen 1s linear;
+          animation: mostrarImagen 1s linear;
 }
 
 @media screen and (min-width: 768px) {
