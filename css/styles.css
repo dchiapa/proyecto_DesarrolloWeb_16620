@@ -477,6 +477,8 @@ header .nav-item:hover .nav-link {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   text-decoration: none;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
   width: 100%;
 }
 
