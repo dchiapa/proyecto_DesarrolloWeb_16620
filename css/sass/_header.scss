@@ -1,8 +1,13 @@
 header {
   grid-area: header;
+  height: 50px;
+  position: fixed;
+  width: 100%;
   .navbar {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 0;
     @media screen and (min-width: 768px) {
-      margin: 0 2rem;
+      padding: 0 2rem;
     }
   }
   .navbar-toggler:focus {
@@ -18,13 +23,18 @@ header {
   .nav-link {
     @include color($grey);
   }
+  .navbar-brand {
+    border-radius: 5px;
+
+    padding: 5px;
+    &:hover {
+      @include bgColor($blue);
+    }
+  }
   .nav-item {
     @include bgColor($dark-grey, 0.8);
     border-bottom: 1px solid $grey;
     transition: all 500ms ease-in-out;
-    .nav-link {
-      text-decoration: underline;
-    }
     &:hover {
       @include bgColor($grey);
       text-transform: uppercase;
