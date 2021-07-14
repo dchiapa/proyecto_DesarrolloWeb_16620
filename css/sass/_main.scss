@@ -1,9 +1,10 @@
 /* sección y página about */
-.about__intro,
-.about__certificates {
-  @include content($grey);
-}
 .about {
+  width: calc(100% - 30px);
+  &__intro,
+  &__certificates {
+    @include content($grey);
+  }
   /*  about__intro  */
   &__text {
     margin-top: 1rem;
@@ -41,12 +42,6 @@
       width: 80%;
       margin: 0 auto;
     }
-    img {
-      width: 100%;
-      @media screen and (min-width: 768px) {
-        width: 100%;
-      }
-    }
   }
 }
 
@@ -60,17 +55,8 @@
     justify-content: space-between;
     @media screen and (min-width: 768px) {
       flex-direction: row;
-    }
-    img {
-      margin-bottom: 1em;
-      width: 50%;
-      &:active,
-      &:hover {
-        animation: mostrarImagen 1s linear;
-      }
-      @media screen and (min-width: 768px) {
-        width: 25%;
-      }
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
   }
 }
