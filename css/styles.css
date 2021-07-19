@@ -378,6 +378,10 @@ header .nav-item:hover .nav-link {
   margin-top: 1em;
 }
 
+.about__images img {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .about__images {
     -webkit-box-orient: horizontal;
