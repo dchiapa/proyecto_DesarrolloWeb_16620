@@ -126,6 +126,7 @@ main {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: main;
+  max-width: 0 0.5rem !important;
   min-height: 100%;
 }
 
@@ -231,11 +232,19 @@ header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+}
+
+header .navbar {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 0;
 }
 
 @media screen and (min-width: 768px) {
   header .navbar {
-    margin: 0 2rem;
+    padding: 0 2rem;
   }
 }
 
@@ -256,15 +265,20 @@ header .nav-link {
   color: #d4d4d4 !important;
 }
 
+header .navbar-brand {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+header .navbar-brand:hover {
+  background-color: #244b8c;
+}
+
 header .nav-item {
   background-color: rgba(50, 50, 50, 0.8);
   border-bottom: 1px solid #d4d4d4;
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
-}
-
-header .nav-item .nav-link {
-  text-decoration: underline;
 }
 
 header .nav-item:hover {
@@ -296,19 +310,19 @@ header .nav-item:hover .nav-link {
 }
 
 /* sección y página about */
-.about__intro,
-.about__certificates {
+.about {
+  width: calc(100% - 30px);
+  /*  about__intro  */
+  /*  about__certificates  */
+}
+
+.about__intro, .about__certificates {
   background-color: #d4d4d4;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 7px 0 #323232;
           box-shadow: 0 0 7px 0 #323232;
   margin: 2em 0;
   padding: 1em 1rem;
-}
-
-.about {
-  /*  about__intro  */
-  /*  about__certificates  */
 }
 
 .about__text {
@@ -378,16 +392,6 @@ header .nav-item:hover .nav-link {
   }
 }
 
-.about__images img {
-  width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .about__images img {
-    width: 100%;
-  }
-}
-
 /* sección intro */
 .indexIntro {
   background-color: #d4d4d4;
@@ -420,22 +424,10 @@ header .nav-item:hover .nav-link {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-}
-
-.indexIntro__imgContainer img {
-  margin-bottom: 1em;
-  width: 50%;
-}
-
-.indexIntro__imgContainer img:active, .indexIntro__imgContainer img:hover {
-  -webkit-animation: mostrarImagen 1s linear;
-          animation: mostrarImagen 1s linear;
-}
-
-@media screen and (min-width: 768px) {
-  .indexIntro__imgContainer img {
-    width: 25%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
