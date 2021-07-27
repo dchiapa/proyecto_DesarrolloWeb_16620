@@ -1,6 +1,6 @@
 <?php
 $email_to = "info@diegochiapa.com.ar";
-$email_subject = "Contacto desde la web";
+$email_subject = "Contacto desde el blog";
 $email_message = "Detalles del formulario de contacto:\n\n";
 $email_message .= "Nombre: " . $_POST['name'] . "\n";
 $email_message .= "E-mail: " . $_POST['mail'] . "\n";
